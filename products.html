@@ -1,13 +1,72 @@
 <!DOCTYPE html>
-<html><head><title>Products | Probionix Labs</title>
-<link rel="stylesheet" href="css/style.css"></head>
-<body><div id="header"></div>
+<html>
+<head>
+  <title>Products | Probionix Labs</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="header"></div>
+
 <section class="container">
-<h2>Products</h2>
-<div class="product-card"><h3>Self-Sensing Soft Pneumatic Actuator</h3><p>Adaptive Ecoflex-based actuator with embedded sensing.</p></div>
-<div class="product-card"><h3>EMG-Controlled Prosthetic Leg</h3><p>Flexible prosthetic for walking, sports, and riding.</p></div>
-<div class="product-card"><h3>Water Surface Cleaning Robot</h3><p>Autonomous robot for oil spill mitigation.</p></div>
+  <h2>Products</h2>
+
+  <!-- PRODUCT 1 : IMAGE -->
+  <div class="product-card">
+    <img src="Self Sensing Soft Pneumatic Actuator.jpeg"
+         alt="Self-Sensing Soft Pneumatic Actuator"
+         class="product-media">
+
+    <h3>Self-Sensing Soft Pneumatic Actuator</h3>
+    <p>Adaptive Ecoflex-based actuator with embedded sensing.</p>
+
+    <p><strong>Product ID:</strong> SS-SPA-001</p>
+    <p><strong>Cost:</strong> ₹7,500</p>
+
+    <a href="contact.html" class="btn-primary">Enquire Now</a>
+  </div>
+
+  <!-- PRODUCT 2 : VIDEO -->
+  <div class="product-card">
+    <video class="product-media" controls>
+      <source src="prosthetic-ankle-movement.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h3>EMG-Controlled Prosthetic Leg</h3>
+    <p>Flexible prosthetic for walking, sports, and riding.</p>
+
+    <p><strong>Product ID:</strong> EMG-PL-002</p>
+    <p><strong>Cost:</strong> ₹65,800</p>
+
+    <a href="contact.html" class="btn-primary">Enquire Now</a>
+  </div>
+
+  <!-- PRODUCT 3 : IMAGE -->
+  <div class="product-card">
+    <img src="oil_robot2.jpeg"
+         alt="Water Surface Cleaning Robot"
+         class="product-media">
+
+    <h3>Water Surface Cleaning Robot</h3>
+    <p>Autonomous robot for oil spill mitigation.</p>
+
+    <p><strong>Product ID:</strong> WSCR-OIL-003</p>
+    <p><strong>Cost:</strong> ₹32,000</p>
+
+    <a href="contact.html" class="btn-primary">Enquire Now</a>
+  </div>
+
 </section>
+
 <footer>© 2025 Probionix Labs Pvt. Ltd.</footer>
-<script>fetch("header.html").then(r=>r.text()).then(d=>document.getElementById("header").innerHTML=d);</script>
-</body></html>
+
+<script>
+fetch("header.html")
+  .then(r => r.text())
+  .then(d => document.getElementById("header").innerHTML = d);
+</script>
+
+</body>
+</html>
