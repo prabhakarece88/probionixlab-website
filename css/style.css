@@ -1,10 +1,121 @@
-body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f5f7fa}
-.top-header{background:#003366;color:white;padding:15px;display:flex;justify-content:space-between}
-.top-header a{color:white;margin:0 10px;text-decoration:none}
-.hero{padding:80px;background:linear-gradient(135deg,#003366,#0059b3);color:white;text-align:center}
-.cards{display:flex;gap:20px;padding:40px}
-.card,.product-card{background:white;padding:20px;border-radius:8px;box-shadow:0 4px 15px rgba(0,0,0,0.1)}
-.container{padding:40px}
-.btn-primary{background:#ff9900;color:white;padding:12px 20px;border-radius:4px;text-decoration:none}
-.btn-secondary{border:2px solid white;color:white;padding:12px 20px;border-radius:4px;text-decoration:none}
-footer{text-align:center;padding:20px;background:#eaeaea}
+body{
+  font-family: Segoe UI, Arial, sans-serif;
+  margin: 0;
+  background: #f5f7fa;
+}
+
+/* ================= HEADER FIX ================= */
+
+.top-header{
+  background: #003366;
+  color: white;
+  padding: 12px 20px;
+}
+
+.top-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO CONTROL (IMPORTANT FIX) */
+.top-header .logo{
+  max-height: 60px;     /* controls large image issue */
+  width: auto;
+}
+
+/* TITLE */
+.top-header h1{
+  font-size: 22px;
+  margin: 0 20px;
+  white-space: nowrap;
+}
+
+/* NAVIGATION */
+.top-header nav{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-header a{
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* CONTACT CTA */
+.top-header a.cta{
+  background: #ff9900;
+  color: #003366;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+/* ================= OTHER SECTIONS (UNCHANGED) ================= */
+
+.hero{
+  padding: 80px;
+  background: linear-gradient(135deg,#003366,#0059b3);
+  color: white;
+  text-align: center;
+}
+
+.cards{
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card,
+.product-card{
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.container{
+  padding: 40px;
+}
+
+.btn-primary{
+  background: #ff9900;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-secondary{
+  border: 2px solid white;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
+  background: #eaeaea;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px){
+  .top-header{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .top-header h1{
+    margin: 10px 0;
+  }
+
+  .top-header nav{
+    justify-content: center;
+  }
+}
