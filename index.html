@@ -1,170 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Probionix Labs</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
-    }
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav {
-      margin-top: 0.5rem;
-    }
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .logo {
-      max-width: 150px;
-      margin: 0 auto;
-    }
-    .container {
-      padding: 2rem;
-      text-align: center;
-    }
-    .tagline {
-      font-size: 1.2rem;
-      color: #333;
-      margin-top: 1rem;
-    }
-    .product {
-      background-color: #ffffff;
-      padding: 2rem;
-      margin: 2rem auto;
-      max-width: 800px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .product img, .product video {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-    .product-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .product-gallery img {
-      max-width: 250px;
-      border-radius: 8px;
-    }
-    .inquiry-button {
-      margin-top: 1rem;
-      display: inline-block;
-      background-color: #004080;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 1rem;
-    }
-    .contact {
-      background-color: #ffffff;
-      padding: 1.5rem;
-      margin: 2rem auto;
-      max-width: 600px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-      background-color: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 1rem;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Probionix Labs | Deep-Tech Robotics Startup</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <img src="logo1.png" alt="Probionix Labs Logo" class="logo">
-    <h1>PROBIONIX LABS</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="#product">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<div id="header"></div>
 
-  <div class="container">
-    <h2>Flexible Prosthetics. Smart Engineering. Future Ready.</h2>
-    <p class="tagline">Empowering lives with advanced prosthetic technologies and innovative engineering.</p>
+<section class="hero">
+<h1>Engineering the Future of Soft Robotics</h1>
+<p>Deep-tech startup developing self-sensing soft actuators, intelligent prosthetics, and robotic systems.</p>
+<a class="btn-primary" href="products.html">Explore Products</a>
+<a class="btn-secondary" href="contact.html">Contact Us</a>
+</section>
 
-    <div id="about">
-      <h3>About Us</h3>
-      <p>Probionix Labs Private Limited is located in Madurai, Tamil Nadu, India. We specialize in flexible prosthetics and engineering innovations, with a vision to be future ready. Registered under CIN: U32506TN2025PTC179093, PAN: AAPCP6466M, TAN: MRIP05465F.</p>
-    </div>
+<section class="cards">
+<div class="card"><h3>Soft Robotics</h3><p>Ecoflex-based self-sensing pneumatic actuators.</p></div>
+<div class="card"><h3>Prosthetic Systems</h3><p>EMG-controlled flexible prosthetic limbs.</p></div>
+<div class="card"><h3>Robotics & CPS</h3><p>Autonomous and cyber-physical robotic platforms.</p></div>
+</section>
 
-    <div id="product">
-      <h3>Our Products</h3>
-
-      <div class="product">
-        <h4>1. Self Sensing Soft Pneumatic Actuator for precise bending angle calculation</h4>
-        <p><strong>Product ID:</strong> SS-SPA-001</p>
-        <p><strong>Sale Price:</strong> ₹7,500</p>
-        <p>This actuator is designed for adaptive movement and precise control using integrated self-sensing technology. Ideal for biomedical and robotic applications where flexibility and responsiveness are key.</p>
-        <img src="Self Sensing Soft Pneumatic Actuator.jpeg" alt="Soft Self Sensing Pneumatic Actuator">
-        <a href="#contact" class="inquiry-button">Inquire Now</a>
-      </div>
-
-      <div class="product">
-        <h4>2. EMG Driven 3D Printed Prosthetic Leg using Soft Pneumatic Actuator for flexible ankle motions-Research Purpose</h4>
-        <p><strong>Product ID:</strong> SPA-3DPL-002</p>
-        <p><strong>Sale Price:</strong> ₹65,800</p>
-        <p>This prosthetic design demonstrates pneumatic actuation for natural ankle motion in prosthetic limbs. The integration allows riders to operate motorcycles or navigate uneven terrain with flexibility and safety.</p>
-        <video controls>
-          <source src="prosthetic-ankle-movement.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <a href="#contact" class="inquiry-button">Inquire Now</a>
-      </div>
-
-      <div class="product">
-        <h4>3. Water Surface Cleaning Robot for Oil Removal</h4>
-        <p><strong>Product ID:</strong> WSCR-OIL-003</p>
-        <p><strong>Sale Price:</strong> ₹32,000</p>
-        <p>A surface-floating robotic system that uses UV+IR sensors and ferrous attraction methods to locate and remove oil spills from water surfaces. It is suitable for environmental cleanup applications.</p>
-        <div class="product-gallery">
-          <img src="oil_robot1.jpeg" alt="Oil Cleaning Robot Image 1">
-          <img src="oil_robot2.jpeg" alt="Oil Cleaning Robot Image 2">
-          <img src="oil_robot3.jpeg" alt="Oil Cleaning Robot Image 3">
-        </div>
-        <a href="#contact" class="inquiry-button">Inquire Now</a>
-      </div>
-    </div>
-
-    <div class="contact" id="contact">
-      <h3>Contact Us</h3>
-      <p><strong>Address:</strong><br>
-      Directors: Dr.G.Prabhakar and Mr.P.Ajith Pandi, New No. 28, Old No. 46, Thazhlai Veethi, Anbunagar, Anna Nagar (Madurai),<br>
-      Madurai North, Madurai - 625020, Tamil Nadu, India</p>
-      <p><strong>Email:</strong> probionixlabs@gmail.com<br>
-      <strong>Website:</strong> <a href="http://www.probionixlabs.com" target="_blank">www.probionixlabs.com</a></p>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 Probionix Labs Pvt. Ltd. All rights reserved.
-  </footer>
+<footer>© 2025 Probionix Labs Pvt. Ltd.</footer>
+<script>fetch("header.html").then(r=>r.text()).then(d=>document.getElementById("header").innerHTML=d);</script>
 </body>
 </html>
